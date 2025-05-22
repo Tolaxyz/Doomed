@@ -67,7 +67,9 @@ body {
   right: 50%;
   text-align: center;
 }
-
+.red:hover {
+  transform: scale(1.1);
+}
 .eth {
   position: absolute;
   top: 50px;
