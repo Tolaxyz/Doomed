@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container" id="game">
+      <img src="images/character.png" id="character" class="character" />
+      <img src="images/obstacle.png" id="obstacle" class="obstacle" />
+      <img src="images/red.png" id="red" class="red" />
+      <img src="images/ETH.png" id="eth" class="eth" />
+      <img src="images/ETH.png" id="eth1" class="eth1" />
+      <img src="images/excalibur.png" id="exc" class="exc" />
+      <div class="score" id="score">Life Count: 0</div>
+      <div id="gameOverText" class="game-over hidden">
+        "be cast into ruin, or breathe thy last"
+      </div>
+      <button id="restartBtn" class="restart-button hidden">Start Again</button>
+    </div>
+    <button id="startBtn">Begin Quest!</button>
+    <button id="pauseBtn">Pause</button>
+    <div id="gameText">Embrace thy doom!</div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
