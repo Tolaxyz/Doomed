@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="passwordModal" class="modal">
+      <div class="modal-content">
+        <h2>ARE YOU CHOSEN?</h2>
+        <p>Enter the password to begin:</p>
+        <input type="password" id="passwordInput" />
+        <button onclick="checkPassword()">Enter</button>
+        <p id="errorText" style="color: red; display: none">Access Denied</p>
+      </div>
+    </div>
+
     <div class="game-container" id="game">
       <img src="images/character.png" id="character" class="character" />
       <img src="images/obstacle.png" id="obstacle" class="obstacle" />
@@ -21,7 +31,7 @@
       <button id="restartBtn" class="restart-button hidden">Start Again</button>
     </div>
     <button id="startBtn">Begin Quest!</button>
-    <button id="pauseBtn">Yeild!</button>
+    <button id="pauseBtn">Yeild</button>
     <div id="gameText">Embrace Thy Doom!</div>
 
     <script src="game.js"></script>
